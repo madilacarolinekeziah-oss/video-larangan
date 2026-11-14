@@ -1,0 +1,24 @@
+{
+  "name": "tiga-larangan-bisnis-islam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Video edukasi 9:16 — Riba, Maysir, dan Risywah dalam bisnis Islam (Remotion)",
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "build": "remotion render src/index.ts TigaLarangan out/tiga-larangan.mp4 --codec=h264",
+    "typecheck": "tsc --noEmit",
+    "pauses": "node scripts/detect-pauses.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.250",
+    "@remotion/google-fonts": "4.0.250",
+    "@remotion/media-utils": "4.0.250",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.250"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.3",
+    "typescript": "5.5.4"
+  }
+}
